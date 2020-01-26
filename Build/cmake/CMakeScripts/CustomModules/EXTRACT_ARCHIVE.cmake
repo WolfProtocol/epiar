@@ -28,7 +28,7 @@ function(EXTRACT_ARCHIVE)
 			message(STATUS "Extracting to ${ARC_OUT}")
 			if (WIN32)
 				execute_process(COMMAND "${EX_GZ_PATH}" -cdv "${ARC_PATH}"
-					COMMAND "${EX_TAR_PATH}" -xv
+					COMMAND "${EX_TAR_PATH}" -xvzf "${ARC_PATH}"
 					WORKING_DIRECTORY "${ARC_OUT}"
 					RESULT_VARIABLE EX_RETURN_CODE)
 			elseif (UNIX)
