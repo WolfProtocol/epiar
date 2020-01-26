@@ -89,7 +89,6 @@ set(CPACK_PACKAGE_INSTALL_DIRECTORY "Epiar")
 set(CPACK_RESOURCE_FILE_LICENSE "${Epiar_OUT_DIR}/LICENSE")
 
 INCLUDE(CPack)
-
 # Advanced configuration of CPACK
 if(WIN32)
 	cpack_add_component(EpiarExe
@@ -118,7 +117,7 @@ if(WIN32)
 		DISPLAY_NAME "Standard")
 	cpack_add_install_type(Console
 		DISPLAY_NAME "With Console")
-else(UNIX AND NOT APPLE)
+elseif(UNIX AND NOT APPLE)
 
 else(APPLE)
 
