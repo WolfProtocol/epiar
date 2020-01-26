@@ -135,7 +135,7 @@ CHECK_3RD_PARTY("SDL_image/SDL_image-1.2.10"
 # External audio headers for windows
 if (WIN32)
 	CHECK_3RD_PARTY("MIKMOD/libmikmod-3.1.12/include"
-		"http://sourceforge.net/projects/mikmod/files/libmikmod%20(source)/3.1.12/libmikmod-3.1.12.tar.gz/download" MIKMOD)
+		"https://sourceforge.net/projects/mikmod/files/outdated_versions/libmikmod/3.1.12/libmikmod-3.1.12.tar.gz/download" MIKMOD)
 	
 	CHECK_3RD_PARTY("OGG/libogg-1.1.4/include"
 		"http://downloads.xiph.org/releases/ogg/libogg-1.1.4.tar.gz" OGG NOADDLIB)
@@ -198,6 +198,7 @@ set(THIRDPARTY_DOWNLOAD FALSE CACHE BOOL "Download/Build missing dependencies?" 
 if (COMPILE_DOXYGEN)
 	find_package(Doxygen)
 	if (DOXYGEN_FOUND AND DOXYGEN_DOT_FOUND)
+		message("wp where is doxygen ${DOXYGEN_EXECUTABLE}")
 		add_custom_target(docs "${DOXYGEN_EXECUTABLE}"
 			WORKING_DIRECTORY ${Epiar_SRC_DIR})
 	else (DOXYGEN_FOUND AND DOXYGEN_DOT_FOUND)
