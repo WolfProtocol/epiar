@@ -27,7 +27,7 @@ The simplest way to compile this package is:
 Installing
 ==========
 
-In the time of writing this document there is not installation method
+At the time of writing this document there is no installation method.
 Epiar creates a bin file in the same foder that all the game and compilation
 data resides (the cvs folder you checked into), In the future data folder
 would be separated and also 'make install' will work, until then if you want
@@ -48,7 +48,7 @@ needed for Epiar to work do the next things:
   
   4.  You can remove the dir you compiled in with 'rm -r /compiling/dir' 
   
-  5.  For conviniance you can create a simple shell script to put in "/usr/bin"
+  5.  For convenience you can create a simple shell script to put in "/usr/bin"
       Follow the instructions in the next section if you want to do so.
   
 The Script
