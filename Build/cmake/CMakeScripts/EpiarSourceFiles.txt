@@ -69,7 +69,6 @@ set (Epiar_src ${Epiar_src}
 	${Epiar_SRC_DIR}/Sprites/ai.cpp
 	${Epiar_SRC_DIR}/Sprites/ai_lua.cpp
 	${Epiar_SRC_DIR}/Sprites/effects.h
-	${Epiar_SRC_DIR}/Sprites/gate.h
 	${Epiar_SRC_DIR}/Sprites/planets.h
 	${Epiar_SRC_DIR}/Sprites/planets_lua.h
 	${Epiar_SRC_DIR}/Sprites/player.h
@@ -78,7 +77,6 @@ set (Epiar_src ${Epiar_src}
 	${Epiar_SRC_DIR}/Sprites/sprite.h
 	${Epiar_SRC_DIR}/Sprites/spritemanager.h
 	${Epiar_SRC_DIR}/Sprites/effects.cpp
-	${Epiar_SRC_DIR}/Sprites/gate.cpp
 	${Epiar_SRC_DIR}/Sprites/planets.cpp
 	${Epiar_SRC_DIR}/Sprites/planets_lua.cpp
 	${Epiar_SRC_DIR}/Sprites/player.cpp
@@ -109,8 +107,6 @@ set (Epiar_src ${Epiar_src}
 	${Epiar_SRC_DIR}/UI/ui_label.h
 	${Epiar_SRC_DIR}/UI/ui_lua.cpp
 	${Epiar_SRC_DIR}/UI/ui_lua.h
-	${Epiar_SRC_DIR}/UI/ui_map.cpp
-	${Epiar_SRC_DIR}/UI/ui_map.h
 	${Epiar_SRC_DIR}/UI/ui_picture.cpp
 	${Epiar_SRC_DIR}/UI/ui_picture.h
 	${Epiar_SRC_DIR}/UI/ui_paragraph.cpp
@@ -158,8 +154,6 @@ set (Epiar_src ${Epiar_src}
 	${Epiar_SRC_DIR}/Utilities/timer.h
 	${Epiar_SRC_DIR}/Utilities/trig.cpp
 	${Epiar_SRC_DIR}/Utilities/trig.h
-	${Epiar_SRC_DIR}/Utilities/xml.cpp
-	${Epiar_SRC_DIR}/Utilities/xml.h
 	)
 if (WIN32)
   if(MINGW)
